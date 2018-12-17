@@ -1,3 +1,53 @@
 body{
-    background-color:blue;
+    /* background-color:blue; */
+}
+
+img{
+    height: 639px;
+    width: 480px;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* If you can't see the front... you can't see anything. */
+    backface-visibility: hidden;
+    transition: all 2s;
+}
+
+/* Make the parent div obviouis: */
+#parent{
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    padding: 10px;
+    background-color: #4f5f6c;
+    /* perspective: 200px; */
+    /* perspective: 100px; */
+    perspective: 800px;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+#parent div{
+    padding: 50px;
+    border: 1px solid #0912ee;
+}
+
+#threeD{
+    background-color: #0f0;
+    transform: rotateX(45deg);
+}
+
+#threeD2{
+    background-color: #f0f;
+    transform: rotateY(45deg);
+}
+
+#threeD3{
+    background-color: #00f;
+    transform: rotateZ(45deg);
 }
