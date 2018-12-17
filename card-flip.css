@@ -12,7 +12,7 @@ for children to play inside of */
 .card{
     width: 480px;
     height: 639px;
-    perspective: 400px;
+    perspective: 2000px;
     border: 2px solid cornflowerblue;
 }
 
@@ -23,6 +23,10 @@ for children to play inside of */
     /* the children of card-holder will have absolute position
     so give this parent a position */
     position: relative;
+    /* tell all child elements (card-back and card-front), they are in 
+    3d land. When you transform, do so like a good 3d child */
+    transform-style: preserve-3d;
+    /* transform-origin: 20% 40%; */
 }
 
 .card-front, .card-back{
