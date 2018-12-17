@@ -31,14 +31,17 @@ $(document).ready(()=>{
                 <div class="card col-sm-3">
                     <div class="card-holder">
                         <div class="card-front">${card}</div>
-                        <div class="card-back">${card}</div>
+                        <div class="card-back"></div>
                     </div>
                 </div>
             `
-        })
+        });
         console.log(memoryHTML);
         // I'm sorry Jonathan... I will teach them a better way later!
         $('.memory-game').html(memoryHTML);
+        $('.card-holder').click(function(){
+            $(this).addClass('flip');
+        });
     });
 });
 

@@ -33,7 +33,7 @@ img{
 
 .card-back{
 	/* we are inside of css, go up one with ../ then down into images to get bw */
-	background: url('../images/logo-bw.png') no-repeat 50% 50%;	
+	background: url('./images/logo-bw.png') no-repeat 50% 50%;	
 	height: 300px;
 	width: 100%;
 }
